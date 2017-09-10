@@ -1,12 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title></title>
+
+<script type="text/javascript">
+var myVar=setInterval(function () {myTimer()}, 1000);
+var counter = 0;
+function myTimer() {
+    var date = new Date();
+    document.getElementById("demo").innerHTML = date.toISOString();
+    document.getElementById("demo2").innerHTML = getWeekDay(date) ;   
+}
+</script>
+
 </head>
 <body>
-<h2>Servlet Uses JSP</h2>
+   <span id="demo"></span>
+    <span id="demo2"></span>
 </body>
 </html>
